@@ -1,0 +1,89 @@
+#app {
+    font-family: 'Montserrat', sans-serif;
+}
+.router-link-exact-active {
+    font-weight: bold;
+}
+.btn-success,
+.badge-success,
+.dropdown-profile,
+.btn-search {
+background-image: linear-gradient(to left top, #dfdb28, #e4e02f, #e8e436, #ede93d, #f2ee43, #f4f048, #f7f34d, #f9f552, #f9f557, #f9f55b, #f8f460, #f8f464);
+}
+
+.btn-success {
+    border: none;
+    color: #000000;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sdw-card {
+    border: none;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bg-nav-univers {
+    background-image: linear-gradient(to bottom, #308f60, #369766, #3c9e6d, #41a673, #47ae7a, #4ab57f, #4cbb83, #4fc288, #4fc98c, #50d190, #50d894, #50e098);
+}
+
+.bg-foot-univers {
+    background-image: linear-gradient(to top, #308f60, #369766, #3c9e6d, #41a673, #47ae7a, #4ab57f, #4cbb83, #4fc288, #4fc98c, #50d190, #50d894, #50e098);
+}
+
+.color-univers {
+    color: #4EB883;
+}
+
+.card-product,
+.img-fluid {
+    border-radius: 15px;
+}
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-product-body {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0
+}
+
+.breadcrumb-item.active {
+font-weight: bold;
+color: black
+}
+.user-avatar {
+  width: 30px; /* Sesuaikan ukuran avatar */
+  height: 30px; /* Sesuaikan ukuran avatar */
+  border-radius: 50%; /* Membuat avatar menjadi bulat */
+  overflow: hidden; /* Mengatasi gambar yang terlalu besar */
+}
+
+.user-avatar img {
+  width: 100%; /* Memastikan gambar avatar mengisi seluruh area */
+  height: 100%; /* Memastikan gambar avatar mengisi seluruh area */
+  object-fit: cover; /* Menyesuaikan gambar agar tidak terpotong */
+  border-radius: 50%; /* Membuat avatar menjadi bulat */
+}
+
+.dropdown-toggle:hover {
+  background-color: #4EB883; /* Mengatur warna latar belakang dropdown saat hover */
+  border-color: #4EB883; /* Mengatur warna border dropdown saat hover */
+    color: #ffffff;
+}
+
+.nav-item-dropdown {
+    height: auto;
+}
+
+.dropdown-toggle::after {
+  display: none; /* Menghilangkan tanda panah */
+}
+
+footer {
+    height: auto;
+}
