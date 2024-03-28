@@ -1,5 +1,5 @@
 <template>
-    <div class="foods-detail">
+    <div class="foods-detail h-detail-univers">
         <Navbar />
     <div class="container">
         <div class="row mt-5">
@@ -19,8 +19,8 @@
                 <img :src="'../asset/images/' + (product.gambar || '')" class="img-fluid shadow" alt="...">
             </div>
             <div class="col-md-6">
-                <h2><strong>{{ product.nama }}</strong></h2>
-                <hr />
+                <h2 class="mb-0"><strong>{{ product.nama }}</strong></h2>
+                <hr class="mt-1"/>
                 <h4>Harga : <strong>Rp.{{ product.harga }}</strong></h4>
                 <form class="mt-4" v-on:submit.prevent>
                     <div class="form-group">

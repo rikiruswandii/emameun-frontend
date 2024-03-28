@@ -2,18 +2,19 @@
   <div class="home">
     <Navbar />
     <div class="container">
-      <deliciousFood/>
+      <deliciousFood />
       <div class="row mt-4">
         <div class="col">
           <h2>Best <strong>Foods</strong></h2>
         </div>
         <div class="col">
-          <router-link to="/foods" class="btn btn-sm btn-success float-right"><b-icon-eye class="mr-1 px-1"></b-icon-eye>Lihat semua</router-link>
+          <router-link to="/foods" class="btn btn-sm btn-success float-right"><b-icon-eye
+              class="mr-1 px-1"></b-icon-eye>Lihat semua</router-link>
         </div>
       </div>
       <div class="row mb-4">
-        <div class="col-md-4 mt-4" v-for="product in  products" :key="product.id">
-          <cardProduct :product="product"/>
+        <div class="col-md-4 mt-1" v-for="product in  products" :key="product.id">
+          <cardProduct :product="product" />
         </div>
       </div>
     </div>

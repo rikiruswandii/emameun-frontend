@@ -14,11 +14,14 @@
           <li class="nav-item">
             <router-link class="nav-link text-light" to="/foods">Food</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link text-light" to="/about">About</router-link>
+          </li>
 
         </ul>
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex align-items-center">
           <li class="nav-item">
-            <router-link class="nav-link text-light" to="/keranjang">Keranjang
+            <router-link class="nav-link text-light small" to="/keranjang">Keranjang
               <b-icon-bag></b-icon-bag>
               <span class="badge badge-success text-dark ml-2">0</span>
             </router-link>

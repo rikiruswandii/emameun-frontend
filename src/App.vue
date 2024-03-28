@@ -7,6 +7,7 @@
 
 <script>
 import iniFooter from '@/components/Footer.vue'
+
 export default {
   components: {
     iniFooter
