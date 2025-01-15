@@ -21,21 +21,14 @@
         </ul>
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex align-items-center">
           <li class="nav-item">
-            <router-link class="nav-link text-light small" to="/keranjang">Keranjang
+            <router-link class="nav-link text-light small" to="#">Keranjang
               <b-icon-bag></b-icon-bag>
               <span class="badge badge-success text-dark ml-2">0</span>
             </router-link>
           </li>
-          <b-nav-item-dropdown right>
-            <!-- Using 'button-content' slot -->
-            <template #button-content>
-              <div class="user-avatar">
-                <img src="asset/images/profile.png" alt="User Avatar">
-              </div>
-            </template>
-            <b-dropdown-item href="#" color-univers>Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-          </b-nav-item-dropdown>
+          <li class="nav-item ml-4">
+            <router-link to="/login" class="btn btn-sm btn-success">Login</router-link>
+          </li>
         </ul>
 
       </div>

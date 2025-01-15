@@ -1,8 +1,8 @@
 <template>
-    <div class="foods-detail h-detail-univers">
+    <div class="foods-detail h-detail-food">
         <Navbar />
     <div class="container">
-        <div class="row mt-5">
+        <div class="row mt-2">
             <div class="col">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -16,12 +16,12 @@
 
         <div class="row mt-3">
             <div class="col-md-6">
-                <img :src="'../asset/images/' + (product.gambar || '')" class="img-fluid shadow" alt="...">
+                <img :src="'../asset/images/' + (product.pict || '')" class="img-fluid shadow" alt="...">
             </div>
             <div class="col-md-6">
-                <h2 class="mb-0"><strong>{{ product.nama }}</strong></h2>
+                <h2 class="mb-0"><strong>{{ product.name }}</strong></h2>
                 <hr class="mt-1"/>
-                <h4>Harga : <strong>Rp.{{ product.harga }}</strong></h4>
+                <h4>Harga : <strong>Rp.{{ product.price }}</strong></h4>
                 <form class="mt-4" v-on:submit.prevent>
                     <div class="form-group">
                         <label for="jumlah_pemesanan">Jumlah pesan</label>
@@ -62,7 +62,7 @@ export default {
         pemesanan() {
             this.pesan.products = this.product;
             axios
-                .post("http://localhost:3000/keranjangs", this.pesan)
+                .post("http://localhost:5000/foods", this.pesan)
                 .then(() => {
                     console.log('Berhasil!')
                 })
@@ -71,11 +71,15 @@ export default {
     },
     mounted() {
         axios
-            .get('http://localhost:3000/products/'+this.$route.params.id)
+            .get('http://localhost:5000/foods/'+this.$route.params.id)
             .then((response) => this.setProduct(response.data))
             .catch((error) => console.log(error))
     }
 }
 </script>
-<style>
+
+<style scoped>
+.h-detail-food {
+    height: 89vh;
+}
 </style>

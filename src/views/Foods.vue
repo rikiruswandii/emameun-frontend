@@ -45,14 +45,14 @@ export default {
         },
         searchFoods(){
             axios
-                .get('http://localhost:3000/products?q=' + this.search)
+                .get('http://localhost:5000/foods?q=' + this.search)
                 .then((response) => this.setProduct(response.data))
                 .catch((error) => console.log(error))
         }
     },
     mounted() {
         axios
-            .get('http://localhost:3000/products')
+            .get('http://localhost:5000/foods')
             .then((response) => this.setProduct(response.data))
             .catch((error) => console.log(error))
     }

@@ -37,17 +37,18 @@ export default {
   },
   data(){
     return { 
-      products: []
+      products: [],
+      maxProductsToShow: 3
     }
   },
   methods: {
     setProduct(data){
-      this.products = data
+      this.products = data.slice(0, this.maxProductsToShow);
     }
   },
   mounted(){
     axios
-      .get('http://localhost:3000/best-products')
+      .get('http://localhost:5000/foods')
       .then((response) => this.setProduct(response.data))
       .catch((error) => console.log(error))
   }
